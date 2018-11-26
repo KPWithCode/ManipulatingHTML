@@ -20,6 +20,18 @@ $colorDiv.mouseenter(function() {
 $colorDiv.mouseleave(function() {
     $(this).css('backgroundColor', 'white')
 
-})
+});
+
+
+    // Function for paragraph changing color when clicked
+    let $p = $('<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor purus non enim praesent elementum facilisis.</p>')
+    $('body').append($p)
+        
+    $p.click(function() {
+        let r = Math.floor((Math.random() * 255) + 1);
+        let g = Math.floor((Math.random() * 255) + 1);
+        let b = Math.floor((Math.random() * 255) + 1);
+        $(this).css('color',  "rgb(" + r + ", " + g + ", " + b + ")")
+    });
 // Dom Content Loaded end tag
 });
