@@ -42,5 +42,20 @@ $colorDiv.mouseleave(function() {
         $emptyDiv.append($span)
     });
 
+    // When button is clicked friends name is added to list 
+    let $friends = ['Barbera', 'Tesfa', 'Marsha', 'Marvin', 'Alex', 'Asim', 'Rachel', 'Andy', 'Michael', 'Ed']
+    let $listBtn = $('#listBtn')
+    let $ul = $('#ul')
+    $listBtn.click(function()   {
+        let $randomFriend = Math.floor(Math.random() * $friends.length)
+        for (let i = 0; i < 1; i++) {
+            let $friendNames = ($friends[$randomFriend])
+            let $li = $(`<li>${$friendNames} </li>`);
+            $ul.append($li);
+        }
+    })
+
+
+
 // Dom Content Loaded end tag
 });
