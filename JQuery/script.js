@@ -48,11 +48,11 @@ $colorDiv.mouseleave(function() {
     let $ul = $('#ul')
     $listBtn.click(function()   {
         let $randomFriend = Math.floor(Math.random() * $friends.length)
-        for (let i = 0; i < 1; i++) {
+       
             let $friendNames = ($friends[$randomFriend])
             let $li = $(`<li>${$friendNames} </li>`);
             $ul.append($li);
-        }
+        
     })
 
 
