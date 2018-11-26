@@ -41,6 +41,15 @@ p.addEventListener('click', function()  {
 p.style.color = colorChange[randomIndex];
 p.style.cursor = 'pointer';
 
-})
+});
+let emptyDiv = document.getElementById('emptyDiv')
+let emptyBtn = document.getElementById('emptyDivBtn')
+emptyBtn.addEventListener('click', function()   {
+    let newSpan = document.createElement('span')
+    emptyDiv.appendChild(newSpan)
+    let newSpanTxt = document.createTextNode('Kyle')
+    newSpan.appendChild(newSpanTxt)
+});
+
     // End of DOM Content Loaded tag
 });
