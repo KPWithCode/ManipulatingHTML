@@ -24,5 +24,17 @@ htmlButton.addEventListener('click', function() {
 
 });
 
+//Set color of div
+let colorDiv = document.getElementById('div1')
+colorDiv.addEventListener('mouseenter', function()  {
+    colorDiv.style.backgroundColor = 'red';
+})
+
+colorDiv.addEventListener('mouseleave', function()   {
+colorDiv.style.backgroundColor = 'white';
+
+});
+//When hover div changes 
+
 // End of DOM Content Loaded tag
 });
