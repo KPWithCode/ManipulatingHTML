@@ -50,6 +50,8 @@ emptyBtn.addEventListener('click', function()   {
     let newSpanTxt = document.createTextNode('Kyle')
     newSpan.appendChild(newSpanTxt)
 });
+let friends = ['Barbera', 'Tesfa', 'Marsha', 'Marvin', 'Alex', 'Asim', 'Rachel', 'Andy', 'Michael', 'Ed']
+let lastBtn = document.getElementById('lastBtn');
 
     // End of DOM Content Loaded tag
 });
