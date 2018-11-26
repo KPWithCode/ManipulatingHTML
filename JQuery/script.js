@@ -33,5 +33,14 @@ $colorDiv.mouseleave(function() {
         let b = Math.floor((Math.random() * 255) + 1);
         $(this).css('color',  "rgb(" + r + ", " + g + ", " + b + ")")
     });
+
+    // When button clicked span with my name is added to div
+    let $emptyDiv = $('#emptyDiv')
+    let $emptyBtn = $('#emptyDivBtn')
+    $emptyBtn.click(function()  {
+        let $span = $('<span>Kyle</span>')
+        $emptyDiv.append($span)
+    });
+
 // Dom Content Loaded end tag
 });
