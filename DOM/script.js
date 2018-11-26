@@ -63,13 +63,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     lastBtn.addEventListener('click', function () {
         let randomFriend = Math.floor(Math.random() * friends.length)
-        for (let i = 0; i < 1; i++) {
+        
             let li = document.createElement('li');
             let friendNames = document.createTextNode(friends[randomFriend])
             li.appendChild(friendNames)
             ul.appendChild(li);
-        }
-
+        
     });
 
     // End of DOM Content Loaded tag
